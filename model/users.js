@@ -52,6 +52,7 @@ const newUser = await User.create(userInfo)
       refreshToken: refreshToken,
       _id:_id,
       statusCode: "OK",
+      email:email
     });
   
   }catch(err){
@@ -94,6 +95,7 @@ const login= async (req,res)=>{
      refreshToken: refreshToken,
      _id:user._id,
      statusCode: "OK",
+     email:email
    })
    
  }catch(err){
